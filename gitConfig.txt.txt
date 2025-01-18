@@ -1,0 +1,40 @@
+Part 1: Install Git
+     1. Download Git
+     Visit the official Git website and download the latest version of Git for your operating system.
+  2. Install Git
+   Open the downloaded installer and follow the installation prompts.
+    Accept the default settings for all options.
+  3. Verify Git Installation
+     Open your terminal (Command Prompt, Git Bash, or Terminal).
+     Run the following command to check if Git is properly installed:
+      git --version
+Part 2: Set up Git on Your Computer
+    4. Configure Your Git Identity:
+     Set your username for Git:
+       git config --global user.name "Your Name"
+     Set your email address for Git:
+       git config --global user.email "your.email@example.com"
+5. Verify Your Configuration
+   To ensure your Git configuration is correct, run:
+   git config --list
+   Part 3: Create a GitHub Account
+6. Sign Up for GitHub
+   Visit GitHub and create a free account.
+   Follow the instructions to verify your email and complete the registration process.
+   Part 4: Set Up SSH Keys (Optional, but Recommended)
+7. Generate an SSH Key
+    Open your terminal (use Git Bash if preferred).
+    Run the following command to create a new SSH key:
+      ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
+    Follow the prompts to save the key in the default location.
+8. Add SSH Key to SSH Agent
+    Start the SSH agent in the background:
+    eval "$(ssh-agent -s)"
+    Add the SSH private key to the agent:
+     ssh-add ~/.ssh/id_rsa
+9. Add SSH Key to GitHub
+   Copy the SSH key to your clipboard:
+    cat ~/.ssh/id_rsa.pub
+Go to GitHub and log in.
+Navigate to your profile settings, then go to "SSH and GPG keys."
+Click "New SSH Key," paste your copied SSH key, and save it
