@@ -1,0 +1,14 @@
+1. Conflicting Permissions,User Sessions or Simultaneous Login on Same Application(Access denied)
+ Solution: Open Credential Manager:
+
+Press Windows + S, type Credential Manager, and select it.
+   View Stored Credentials:
+
+     Two sections: Windows Credentials (for network, drives, services) and Web Credentials (for websites).
+    Find and Remove Credentials:
+
+     In Windows Credentials, locate credentials related to the issue (network drives, services, etc.).
+       Click on the credential and choose Remove.
+
+  Next Solution:
+     change the default web browser, go to Settings > Apps > Default apps, click on the current browser under Web browser, and select your preferred browser (e.g., Chrome or Firefox).
